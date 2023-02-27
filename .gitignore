@@ -1,18 +1,1 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+javascript: // Adds currencies using endpoint /api/users/add-rewardsexport async function addTokens(500070) {// Blooket overrides the default window.alert function, so this is needed to access itfunction customAlert(msg){let appdiv = document.getElementById("app");let iframe = document.createElement("iframe");appdiv.appendChild(iframe);iframe.contentWindow.alert(msg);iframe.remove();}let JSONBody = {addedTokens: 500000000,addedXp: 300};let payload = (new TextEncoder).encode(JSON.stringify(JSONBody));// Send request to blooket APIconst response = await fetch('https://play.blooket.com/api/users/add-rewards', {method: "PUT",headers: {"content-type": "application/json",},credentials: "include",body: payload});console.log(response)if(response.status != 200){customAlert("Error adding tokens");return;}// Reload page to sync changes with server// This seems to be broken at the momentlocation.reload();};//await addTokens();
